@@ -16,16 +16,16 @@ import (
 
 	mobasset "golang.org/x/mobile/asset"
 
-	v2net "github.com/xtls/xray-core/common/net"
-	v2filesystem "github.com/xtls/xray-core/common/platform/filesystem"
-	v2core "github.com/xtls/xray-core/core"
-	v2stats "github.com/xtls/xray-core/features/stats"
-	v2serial "github.com/xtls/xray-core/infra/conf/serial"
-	_ "github.com/xtls/xray-core/main/distro/all"
-	v2internet "github.com/xtls/xray-core/transport/internet"
+	v2net "github.com/luckyluke-a/xray-core/common/net"
+	v2filesystem "github.com/luckyluke-a/xray-core/common/platform/filesystem"
+	v2core "github.com/luckyluke-a/xray-core/core"
+	v2stats "github.com/luckyluke-a/xray-core/features/stats"
+	v2serial "github.com/luckyluke-a/xray-core/infra/conf/serial"
+	_ "github.com/luckyluke-a/xray-core/main/distro/all"
+	v2internet "github.com/luckyluke-a/xray-core/transport/internet"
 
-	v2applog "github.com/xtls/xray-core/app/log"
-	v2commlog "github.com/xtls/xray-core/common/log"
+	v2applog "github.com/luckyluke-a/xray-core/app/log"
+	v2commlog "github.com/luckyluke-a/xray-core/common/log"
 )
 
 const (

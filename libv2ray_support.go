@@ -11,10 +11,10 @@ import (
 	"time"
 
 	"golang.org/x/sys/unix"
-	v2net "github.com/xtls/xray-core/common/net"
-	"github.com/xtls/xray-core/features/dns"
-	"github.com/xtls/xray-core/features/outbound"
-	v2internet "github.com/xtls/xray-core/transport/internet"
+	v2net "github.com/luckyluke-a/xray-core/common/net"
+	"github.com/luckyluke-a/xray-core/features/dns"
+	"github.com/luckyluke-a/xray-core/features/outbound"
+	v2internet "github.com/luckyluke-a/xray-core/transport/internet"
 )
 
 type protectSet interface {
