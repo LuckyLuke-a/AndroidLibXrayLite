@@ -2,10 +2,9 @@ name: Build
 
 on:
   workflow_dispatch:
-    inputs:
-      release_tag:
-        required: true
-        type: string
+  push:
+    tags:
+      - "v*.*.*"
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -52,6 +51,7 @@ jobs:
     - name: Upload AndroidLibXrayLite to release
       uses: svenstaro/upload-release-action@v2
       with:
-        file: ./libv2ray*r
-        tag: ${{ github.event.inputs.release_tag }}
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        file: ./*.aar
+        tag: ${{ github.ref }}
         file_glob: true
